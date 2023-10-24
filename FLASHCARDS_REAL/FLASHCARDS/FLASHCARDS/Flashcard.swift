@@ -2,8 +2,10 @@
 //  Flashcard.swift
 //  FLASHCARDS
 //
-//  Created by Peter Borozan on 10/20/23.
+//  Created by Peter Borozan on 10/23/23.
 //
+
+import Foundation
 import SwiftUI
 
 struct Flashcard<Front: View, Back: View>: View {

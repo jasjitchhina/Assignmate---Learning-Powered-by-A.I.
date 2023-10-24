@@ -8,8 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var viewModel = FlashcardViewModel() // ViewModel is observed by the ContentView
+
     var body: some View {
-        FlashcardStack() // Your flashcard stack is now the main view of the app.
-            .padding() // Any other modifiers or additional views you want to add.
+        VStack {
+            if viewModel.flashcards.isEmpty {
+                Text("Loading...")
+                    .onAppear {
+                        Task {
+                            await viewModel.loadFlashcards() // Fetch flashcards when the view appears
+                        }
+                    }
+            } else {
+                FlashcardStack(flashcards: viewModel.flashcards) // Your existing FlashcardStack view
+            }
+        }
     }
 }
+
