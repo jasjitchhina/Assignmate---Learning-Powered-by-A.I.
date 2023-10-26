@@ -1,0 +1,644 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC5CB22B2AE9E9ED003B6701 /* LamdaFlashcardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5CB22A2AE9E9ED003B6701 /* LamdaFlashcardApp.swift */; };
+		DC5CB22D2AE9E9ED003B6701 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5CB22C2AE9E9ED003B6701 /* ContentView.swift */; };
+		DC5CB22F2AE9E9EE003B6701 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC5CB22E2AE9E9EE003B6701 /* Assets.xcassets */; };
+		DC5CB2322AE9E9EE003B6701 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC5CB2312AE9E9EE003B6701 /* Preview Assets.xcassets */; };
+		DC5CB23C2AE9E9EE003B6701 /* LamdaFlashcardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5CB23B2AE9E9EE003B6701 /* LamdaFlashcardTests.swift */; };
+		DC5CB2462AE9E9EE003B6701 /* LamdaFlashcardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5CB2452AE9E9EE003B6701 /* LamdaFlashcardUITests.swift */; };
+		DC5CB2482AE9E9EE003B6701 /* LamdaFlashcardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5CB2472AE9E9EE003B6701 /* LamdaFlashcardUITestsLaunchTests.swift */; };
+		DC5CB2552AE9EA8F003B6701 /* Flashcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5CB2542AE9EA8F003B6701 /* Flashcard.swift */; };
+		DC5CB2572AE9EAB1003B6701 /* FlashcardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5CB2562AE9EAB1003B6701 /* FlashcardData.swift */; };
+		DC5CB2592AE9EACE003B6701 /* FlashcardStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5CB2582AE9EACE003B6701 /* FlashcardStack.swift */; };
+		DC5CB25B2AE9EAFC003B6701 /* FlashcardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5CB25A2AE9EAFC003B6701 /* FlashcardViewModel.swift */; };
+		DC5CB25D2AE9EB43003B6701 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5CB25C2AE9EB43003B6701 /* ListView.swift */; };
+		DC5CB25F2AE9EB6D003B6701 /* gpt3.5.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5CB25E2AE9EB6D003B6701 /* gpt3.5.swift */; };
+		DC5CB2622AE9EBDD003B6701 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = DC5CB2612AE9EBDD003B6701 /* OpenAI */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC5CB2382AE9E9EE003B6701 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC5CB21F2AE9E9ED003B6701 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC5CB2262AE9E9ED003B6701;
+			remoteInfo = LamdaFlashcard;
+		};
+		DC5CB2422AE9E9EE003B6701 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC5CB21F2AE9E9ED003B6701 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC5CB2262AE9E9ED003B6701;
+			remoteInfo = LamdaFlashcard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DC5CB2272AE9E9ED003B6701 /* LamdaFlashcard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LamdaFlashcard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC5CB22A2AE9E9ED003B6701 /* LamdaFlashcardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LamdaFlashcardApp.swift; sourceTree = "<group>"; };
+		DC5CB22C2AE9E9ED003B6701 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DC5CB22E2AE9E9EE003B6701 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC5CB2312AE9E9EE003B6701 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DC5CB2372AE9E9EE003B6701 /* LamdaFlashcardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LamdaFlashcardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC5CB23B2AE9E9EE003B6701 /* LamdaFlashcardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LamdaFlashcardTests.swift; sourceTree = "<group>"; };
+		DC5CB2412AE9E9EE003B6701 /* LamdaFlashcardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LamdaFlashcardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC5CB2452AE9E9EE003B6701 /* LamdaFlashcardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LamdaFlashcardUITests.swift; sourceTree = "<group>"; };
+		DC5CB2472AE9E9EE003B6701 /* LamdaFlashcardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LamdaFlashcardUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DC5CB2542AE9EA8F003B6701 /* Flashcard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flashcard.swift; sourceTree = "<group>"; };
+		DC5CB2562AE9EAB1003B6701 /* FlashcardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardData.swift; sourceTree = "<group>"; };
+		DC5CB2582AE9EACE003B6701 /* FlashcardStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardStack.swift; sourceTree = "<group>"; };
+		DC5CB25A2AE9EAFC003B6701 /* FlashcardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardViewModel.swift; sourceTree = "<group>"; };
+		DC5CB25C2AE9EB43003B6701 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		DC5CB25E2AE9EB6D003B6701 /* gpt3.5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gpt3.5.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC5CB2242AE9E9ED003B6701 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC5CB2622AE9EBDD003B6701 /* OpenAI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC5CB2342AE9E9EE003B6701 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC5CB23E2AE9E9EE003B6701 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC5CB21E2AE9E9ED003B6701 = {
+			isa = PBXGroup;
+			children = (
+				DC5CB2292AE9E9ED003B6701 /* LamdaFlashcard */,
+				DC5CB23A2AE9E9EE003B6701 /* LamdaFlashcardTests */,
+				DC5CB2442AE9E9EE003B6701 /* LamdaFlashcardUITests */,
+				DC5CB2282AE9E9ED003B6701 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC5CB2282AE9E9ED003B6701 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC5CB2272AE9E9ED003B6701 /* LamdaFlashcard.app */,
+				DC5CB2372AE9E9EE003B6701 /* LamdaFlashcardTests.xctest */,
+				DC5CB2412AE9E9EE003B6701 /* LamdaFlashcardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC5CB2292AE9E9ED003B6701 /* LamdaFlashcard */ = {
+			isa = PBXGroup;
+			children = (
+				DC5CB22A2AE9E9ED003B6701 /* LamdaFlashcardApp.swift */,
+				DC5CB22C2AE9E9ED003B6701 /* ContentView.swift */,
+				DC5CB2542AE9EA8F003B6701 /* Flashcard.swift */,
+				DC5CB2562AE9EAB1003B6701 /* FlashcardData.swift */,
+				DC5CB2582AE9EACE003B6701 /* FlashcardStack.swift */,
+				DC5CB25A2AE9EAFC003B6701 /* FlashcardViewModel.swift */,
+				DC5CB25C2AE9EB43003B6701 /* ListView.swift */,
+				DC5CB25E2AE9EB6D003B6701 /* gpt3.5.swift */,
+				DC5CB22E2AE9E9EE003B6701 /* Assets.xcassets */,
+				DC5CB2302AE9E9EE003B6701 /* Preview Content */,
+			);
+			path = LamdaFlashcard;
+			sourceTree = "<group>";
+		};
+		DC5CB2302AE9E9EE003B6701 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DC5CB2312AE9E9EE003B6701 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DC5CB23A2AE9E9EE003B6701 /* LamdaFlashcardTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC5CB23B2AE9E9EE003B6701 /* LamdaFlashcardTests.swift */,
+			);
+			path = LamdaFlashcardTests;
+			sourceTree = "<group>";
+		};
+		DC5CB2442AE9E9EE003B6701 /* LamdaFlashcardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DC5CB2452AE9E9EE003B6701 /* LamdaFlashcardUITests.swift */,
+				DC5CB2472AE9E9EE003B6701 /* LamdaFlashcardUITestsLaunchTests.swift */,
+			);
+			path = LamdaFlashcardUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC5CB2262AE9E9ED003B6701 /* LamdaFlashcard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC5CB24B2AE9E9EE003B6701 /* Build configuration list for PBXNativeTarget "LamdaFlashcard" */;
+			buildPhases = (
+				DC5CB2232AE9E9ED003B6701 /* Sources */,
+				DC5CB2242AE9E9ED003B6701 /* Frameworks */,
+				DC5CB2252AE9E9ED003B6701 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LamdaFlashcard;
+			packageProductDependencies = (
+				DC5CB2612AE9EBDD003B6701 /* OpenAI */,
+			);
+			productName = LamdaFlashcard;
+			productReference = DC5CB2272AE9E9ED003B6701 /* LamdaFlashcard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DC5CB2362AE9E9EE003B6701 /* LamdaFlashcardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC5CB24E2AE9E9EE003B6701 /* Build configuration list for PBXNativeTarget "LamdaFlashcardTests" */;
+			buildPhases = (
+				DC5CB2332AE9E9EE003B6701 /* Sources */,
+				DC5CB2342AE9E9EE003B6701 /* Frameworks */,
+				DC5CB2352AE9E9EE003B6701 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC5CB2392AE9E9EE003B6701 /* PBXTargetDependency */,
+			);
+			name = LamdaFlashcardTests;
+			productName = LamdaFlashcardTests;
+			productReference = DC5CB2372AE9E9EE003B6701 /* LamdaFlashcardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DC5CB2402AE9E9EE003B6701 /* LamdaFlashcardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC5CB2512AE9E9EE003B6701 /* Build configuration list for PBXNativeTarget "LamdaFlashcardUITests" */;
+			buildPhases = (
+				DC5CB23D2AE9E9EE003B6701 /* Sources */,
+				DC5CB23E2AE9E9EE003B6701 /* Frameworks */,
+				DC5CB23F2AE9E9EE003B6701 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC5CB2432AE9E9EE003B6701 /* PBXTargetDependency */,
+			);
+			name = LamdaFlashcardUITests;
+			productName = LamdaFlashcardUITests;
+			productReference = DC5CB2412AE9E9EE003B6701 /* LamdaFlashcardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC5CB21F2AE9E9ED003B6701 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					DC5CB2262AE9E9ED003B6701 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					DC5CB2362AE9E9EE003B6701 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = DC5CB2262AE9E9ED003B6701;
+					};
+					DC5CB2402AE9E9EE003B6701 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = DC5CB2262AE9E9ED003B6701;
+					};
+				};
+			};
+			buildConfigurationList = DC5CB2222AE9E9ED003B6701 /* Build configuration list for PBXProject "LamdaFlashcard" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC5CB21E2AE9E9ED003B6701;
+			packageReferences = (
+				DC5CB2602AE9EBDD003B6701 /* XCRemoteSwiftPackageReference "OpenAI" */,
+			);
+			productRefGroup = DC5CB2282AE9E9ED003B6701 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC5CB2262AE9E9ED003B6701 /* LamdaFlashcard */,
+				DC5CB2362AE9E9EE003B6701 /* LamdaFlashcardTests */,
+				DC5CB2402AE9E9EE003B6701 /* LamdaFlashcardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC5CB2252AE9E9ED003B6701 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC5CB2322AE9E9EE003B6701 /* Preview Assets.xcassets in Resources */,
+				DC5CB22F2AE9E9EE003B6701 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC5CB2352AE9E9EE003B6701 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC5CB23F2AE9E9EE003B6701 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC5CB2232AE9E9ED003B6701 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC5CB25F2AE9EB6D003B6701 /* gpt3.5.swift in Sources */,
+				DC5CB2572AE9EAB1003B6701 /* FlashcardData.swift in Sources */,
+				DC5CB2552AE9EA8F003B6701 /* Flashcard.swift in Sources */,
+				DC5CB2592AE9EACE003B6701 /* FlashcardStack.swift in Sources */,
+				DC5CB25D2AE9EB43003B6701 /* ListView.swift in Sources */,
+				DC5CB25B2AE9EAFC003B6701 /* FlashcardViewModel.swift in Sources */,
+				DC5CB22D2AE9E9ED003B6701 /* ContentView.swift in Sources */,
+				DC5CB22B2AE9E9ED003B6701 /* LamdaFlashcardApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC5CB2332AE9E9EE003B6701 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC5CB23C2AE9E9EE003B6701 /* LamdaFlashcardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC5CB23D2AE9E9EE003B6701 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC5CB2462AE9E9EE003B6701 /* LamdaFlashcardUITests.swift in Sources */,
+				DC5CB2482AE9E9EE003B6701 /* LamdaFlashcardUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC5CB2392AE9E9EE003B6701 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC5CB2262AE9E9ED003B6701 /* LamdaFlashcard */;
+			targetProxy = DC5CB2382AE9E9EE003B6701 /* PBXContainerItemProxy */;
+		};
+		DC5CB2432AE9E9EE003B6701 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC5CB2262AE9E9ED003B6701 /* LamdaFlashcard */;
+			targetProxy = DC5CB2422AE9E9EE003B6701 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DC5CB2492AE9E9EE003B6701 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DC5CB24A2AE9E9EE003B6701 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC5CB24C2AE9E9EE003B6701 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LamdaFlashcard/Preview Content\"";
+				DEVELOPMENT_TEAM = 6Z3S2UQUNN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Jesse-Luke.LamdaFlashcard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC5CB24D2AE9E9EE003B6701 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LamdaFlashcard/Preview Content\"";
+				DEVELOPMENT_TEAM = 6Z3S2UQUNN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Jesse-Luke.LamdaFlashcard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DC5CB24F2AE9E9EE003B6701 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6Z3S2UQUNN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Jesse-Luke.LamdaFlashcardTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LamdaFlashcard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LamdaFlashcard";
+			};
+			name = Debug;
+		};
+		DC5CB2502AE9E9EE003B6701 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6Z3S2UQUNN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Jesse-Luke.LamdaFlashcardTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LamdaFlashcard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LamdaFlashcard";
+			};
+			name = Release;
+		};
+		DC5CB2522AE9E9EE003B6701 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6Z3S2UQUNN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Jesse-Luke.LamdaFlashcardUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LamdaFlashcard;
+			};
+			name = Debug;
+		};
+		DC5CB2532AE9E9EE003B6701 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6Z3S2UQUNN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Jesse-Luke.LamdaFlashcardUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LamdaFlashcard;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC5CB2222AE9E9ED003B6701 /* Build configuration list for PBXProject "LamdaFlashcard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC5CB2492AE9E9EE003B6701 /* Debug */,
+				DC5CB24A2AE9E9EE003B6701 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC5CB24B2AE9E9EE003B6701 /* Build configuration list for PBXNativeTarget "LamdaFlashcard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC5CB24C2AE9E9EE003B6701 /* Debug */,
+				DC5CB24D2AE9E9EE003B6701 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC5CB24E2AE9E9EE003B6701 /* Build configuration list for PBXNativeTarget "LamdaFlashcardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC5CB24F2AE9E9EE003B6701 /* Debug */,
+				DC5CB2502AE9E9EE003B6701 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC5CB2512AE9E9EE003B6701 /* Build configuration list for PBXNativeTarget "LamdaFlashcardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC5CB2522AE9E9EE003B6701 /* Debug */,
+				DC5CB2532AE9E9EE003B6701 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DC5CB2602AE9EBDD003B6701 /* XCRemoteSwiftPackageReference "OpenAI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MacPaw/OpenAI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DC5CB2612AE9EBDD003B6701 /* OpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC5CB2602AE9EBDD003B6701 /* XCRemoteSwiftPackageReference "OpenAI" */;
+			productName = OpenAI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = DC5CB21F2AE9E9ED003B6701 /* Project object */;
+}
