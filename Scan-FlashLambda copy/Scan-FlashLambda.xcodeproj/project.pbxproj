@@ -1,0 +1,668 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DCBBA5992AEDD825004A6110 /* Scan_FlashLambdaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBBA5982AEDD825004A6110 /* Scan_FlashLambdaApp.swift */; };
+		DCBBA59D2AEDD827004A6110 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCBBA59C2AEDD827004A6110 /* Assets.xcassets */; };
+		DCBBA5A02AEDD827004A6110 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCBBA59F2AEDD827004A6110 /* Preview Assets.xcassets */; };
+		DCBBA5AA2AEDD827004A6110 /* Scan_FlashLambdaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBBA5A92AEDD827004A6110 /* Scan_FlashLambdaTests.swift */; };
+		DCBBA5B42AEDD827004A6110 /* Scan_FlashLambdaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBBA5B32AEDD827004A6110 /* Scan_FlashLambdaUITests.swift */; };
+		DCBBA5B62AEDD827004A6110 /* Scan_FlashLambdaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBBA5B52AEDD827004A6110 /* Scan_FlashLambdaUITestsLaunchTests.swift */; };
+		DCBBA5C42AEDD865004A6110 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = DCBBA5C32AEDD865004A6110 /* OpenAI */; };
+		DCBBA5C62AEDD899004A6110 /* FlashcardContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBBA5C52AEDD899004A6110 /* FlashcardContentView.swift */; };
+		DCBBA5C82AEDD8B9004A6110 /* Flashcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBBA5C72AEDD8B9004A6110 /* Flashcard.swift */; };
+		DCBBA5CA2AEDD8D3004A6110 /* FlashcardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBBA5C92AEDD8D3004A6110 /* FlashcardData.swift */; };
+		DCBBA5CC2AEDD8ED004A6110 /* FlashcardStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBBA5CB2AEDD8ED004A6110 /* FlashcardStack.swift */; };
+		DCBBA5CE2AEDD90B004A6110 /* FlashcardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBBA5CD2AEDD90B004A6110 /* FlashcardViewModel.swift */; };
+		DCBBA5D02AEDD927004A6110 /* FlashcardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBBA5CF2AEDD927004A6110 /* FlashcardView.swift */; };
+		DCBBA5D22AEDD947004A6110 /* MakeFlashcardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBBA5D12AEDD947004A6110 /* MakeFlashcardsView.swift */; };
+		DCBBA5D42AEDD95F004A6110 /* REALContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBBA5D32AEDD95F004A6110 /* REALContentView.swift */; };
+		DCBBA5D62AEDD98E004A6110 /* gpt_3.5.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBBA5D52AEDD98E004A6110 /* gpt_3.5.swift */; };
+		DCBBA5D82AEDDA1F004A6110 /* ScanData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBBA5D72AEDDA1F004A6110 /* ScanData.swift */; };
+		DCBBA5DA2AEDDA3A004A6110 /* ScannerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBBA5D92AEDDA3A004A6110 /* ScannerContentView.swift */; };
+		DCBBA5DC2AEDDA4D004A6110 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBBA5DB2AEDDA4D004A6110 /* ScannerView.swift */; };
+		DCBBA5DE2AEDDA6B004A6110 /* TextRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBBA5DD2AEDDA6B004A6110 /* TextRecognizer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DCBBA5A62AEDD827004A6110 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCBBA58D2AEDD825004A6110 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCBBA5942AEDD825004A6110;
+			remoteInfo = "Scan-FlashLambda";
+		};
+		DCBBA5B02AEDD827004A6110 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCBBA58D2AEDD825004A6110 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCBBA5942AEDD825004A6110;
+			remoteInfo = "Scan-FlashLambda";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DCBBA5952AEDD825004A6110 /* Scan-FlashLambda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scan-FlashLambda.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCBBA5982AEDD825004A6110 /* Scan_FlashLambdaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scan_FlashLambdaApp.swift; sourceTree = "<group>"; };
+		DCBBA59C2AEDD827004A6110 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCBBA59F2AEDD827004A6110 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DCBBA5A52AEDD827004A6110 /* Scan-FlashLambdaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Scan-FlashLambdaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCBBA5A92AEDD827004A6110 /* Scan_FlashLambdaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scan_FlashLambdaTests.swift; sourceTree = "<group>"; };
+		DCBBA5AF2AEDD827004A6110 /* Scan-FlashLambdaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Scan-FlashLambdaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCBBA5B32AEDD827004A6110 /* Scan_FlashLambdaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scan_FlashLambdaUITests.swift; sourceTree = "<group>"; };
+		DCBBA5B52AEDD827004A6110 /* Scan_FlashLambdaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scan_FlashLambdaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DCBBA5C52AEDD899004A6110 /* FlashcardContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardContentView.swift; sourceTree = "<group>"; };
+		DCBBA5C72AEDD8B9004A6110 /* Flashcard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flashcard.swift; sourceTree = "<group>"; };
+		DCBBA5C92AEDD8D3004A6110 /* FlashcardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardData.swift; sourceTree = "<group>"; };
+		DCBBA5CB2AEDD8ED004A6110 /* FlashcardStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardStack.swift; sourceTree = "<group>"; };
+		DCBBA5CD2AEDD90B004A6110 /* FlashcardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardViewModel.swift; sourceTree = "<group>"; };
+		DCBBA5CF2AEDD927004A6110 /* FlashcardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardView.swift; sourceTree = "<group>"; };
+		DCBBA5D12AEDD947004A6110 /* MakeFlashcardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeFlashcardsView.swift; sourceTree = "<group>"; };
+		DCBBA5D32AEDD95F004A6110 /* REALContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REALContentView.swift; sourceTree = "<group>"; };
+		DCBBA5D52AEDD98E004A6110 /* gpt_3.5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gpt_3.5.swift; sourceTree = "<group>"; };
+		DCBBA5D72AEDDA1F004A6110 /* ScanData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanData.swift; sourceTree = "<group>"; };
+		DCBBA5D92AEDDA3A004A6110 /* ScannerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerContentView.swift; sourceTree = "<group>"; };
+		DCBBA5DB2AEDDA4D004A6110 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		DCBBA5DD2AEDDA6B004A6110 /* TextRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRecognizer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCBBA5922AEDD825004A6110 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCBBA5C42AEDD865004A6110 /* OpenAI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCBBA5A22AEDD827004A6110 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCBBA5AC2AEDD827004A6110 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DCBBA58C2AEDD825004A6110 = {
+			isa = PBXGroup;
+			children = (
+				DCBBA5972AEDD825004A6110 /* Scan-FlashLambda */,
+				DCBBA5A82AEDD827004A6110 /* Scan-FlashLambdaTests */,
+				DCBBA5B22AEDD827004A6110 /* Scan-FlashLambdaUITests */,
+				DCBBA5962AEDD825004A6110 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DCBBA5962AEDD825004A6110 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCBBA5952AEDD825004A6110 /* Scan-FlashLambda.app */,
+				DCBBA5A52AEDD827004A6110 /* Scan-FlashLambdaTests.xctest */,
+				DCBBA5AF2AEDD827004A6110 /* Scan-FlashLambdaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCBBA5972AEDD825004A6110 /* Scan-FlashLambda */ = {
+			isa = PBXGroup;
+			children = (
+				DCBBA5982AEDD825004A6110 /* Scan_FlashLambdaApp.swift */,
+				DCBBA5C52AEDD899004A6110 /* FlashcardContentView.swift */,
+				DCBBA5C72AEDD8B9004A6110 /* Flashcard.swift */,
+				DCBBA5C92AEDD8D3004A6110 /* FlashcardData.swift */,
+				DCBBA5CB2AEDD8ED004A6110 /* FlashcardStack.swift */,
+				DCBBA5CD2AEDD90B004A6110 /* FlashcardViewModel.swift */,
+				DCBBA5CF2AEDD927004A6110 /* FlashcardView.swift */,
+				DCBBA5D12AEDD947004A6110 /* MakeFlashcardsView.swift */,
+				DCBBA5D32AEDD95F004A6110 /* REALContentView.swift */,
+				DCBBA5D72AEDDA1F004A6110 /* ScanData.swift */,
+				DCBBA5D92AEDDA3A004A6110 /* ScannerContentView.swift */,
+				DCBBA5DB2AEDDA4D004A6110 /* ScannerView.swift */,
+				DCBBA5DD2AEDDA6B004A6110 /* TextRecognizer.swift */,
+				DCBBA5D52AEDD98E004A6110 /* gpt_3.5.swift */,
+				DCBBA59C2AEDD827004A6110 /* Assets.xcassets */,
+				DCBBA59E2AEDD827004A6110 /* Preview Content */,
+			);
+			path = "Scan-FlashLambda";
+			sourceTree = "<group>";
+		};
+		DCBBA59E2AEDD827004A6110 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DCBBA59F2AEDD827004A6110 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DCBBA5A82AEDD827004A6110 /* Scan-FlashLambdaTests */ = {
+			isa = PBXGroup;
+			children = (
+				DCBBA5A92AEDD827004A6110 /* Scan_FlashLambdaTests.swift */,
+			);
+			path = "Scan-FlashLambdaTests";
+			sourceTree = "<group>";
+		};
+		DCBBA5B22AEDD827004A6110 /* Scan-FlashLambdaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DCBBA5B32AEDD827004A6110 /* Scan_FlashLambdaUITests.swift */,
+				DCBBA5B52AEDD827004A6110 /* Scan_FlashLambdaUITestsLaunchTests.swift */,
+			);
+			path = "Scan-FlashLambdaUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCBBA5942AEDD825004A6110 /* Scan-FlashLambda */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCBBA5B92AEDD827004A6110 /* Build configuration list for PBXNativeTarget "Scan-FlashLambda" */;
+			buildPhases = (
+				DCBBA5912AEDD825004A6110 /* Sources */,
+				DCBBA5922AEDD825004A6110 /* Frameworks */,
+				DCBBA5932AEDD825004A6110 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Scan-FlashLambda";
+			packageProductDependencies = (
+				DCBBA5C32AEDD865004A6110 /* OpenAI */,
+			);
+			productName = "Scan-FlashLambda";
+			productReference = DCBBA5952AEDD825004A6110 /* Scan-FlashLambda.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DCBBA5A42AEDD827004A6110 /* Scan-FlashLambdaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCBBA5BC2AEDD827004A6110 /* Build configuration list for PBXNativeTarget "Scan-FlashLambdaTests" */;
+			buildPhases = (
+				DCBBA5A12AEDD827004A6110 /* Sources */,
+				DCBBA5A22AEDD827004A6110 /* Frameworks */,
+				DCBBA5A32AEDD827004A6110 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCBBA5A72AEDD827004A6110 /* PBXTargetDependency */,
+			);
+			name = "Scan-FlashLambdaTests";
+			productName = "Scan-FlashLambdaTests";
+			productReference = DCBBA5A52AEDD827004A6110 /* Scan-FlashLambdaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DCBBA5AE2AEDD827004A6110 /* Scan-FlashLambdaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCBBA5BF2AEDD827004A6110 /* Build configuration list for PBXNativeTarget "Scan-FlashLambdaUITests" */;
+			buildPhases = (
+				DCBBA5AB2AEDD827004A6110 /* Sources */,
+				DCBBA5AC2AEDD827004A6110 /* Frameworks */,
+				DCBBA5AD2AEDD827004A6110 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCBBA5B12AEDD827004A6110 /* PBXTargetDependency */,
+			);
+			name = "Scan-FlashLambdaUITests";
+			productName = "Scan-FlashLambdaUITests";
+			productReference = DCBBA5AF2AEDD827004A6110 /* Scan-FlashLambdaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCBBA58D2AEDD825004A6110 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					DCBBA5942AEDD825004A6110 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					DCBBA5A42AEDD827004A6110 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = DCBBA5942AEDD825004A6110;
+					};
+					DCBBA5AE2AEDD827004A6110 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = DCBBA5942AEDD825004A6110;
+					};
+				};
+			};
+			buildConfigurationList = DCBBA5902AEDD825004A6110 /* Build configuration list for PBXProject "Scan-FlashLambda" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DCBBA58C2AEDD825004A6110;
+			packageReferences = (
+				DCBBA5C22AEDD865004A6110 /* XCRemoteSwiftPackageReference "OpenAI" */,
+			);
+			productRefGroup = DCBBA5962AEDD825004A6110 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCBBA5942AEDD825004A6110 /* Scan-FlashLambda */,
+				DCBBA5A42AEDD827004A6110 /* Scan-FlashLambdaTests */,
+				DCBBA5AE2AEDD827004A6110 /* Scan-FlashLambdaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCBBA5932AEDD825004A6110 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCBBA5A02AEDD827004A6110 /* Preview Assets.xcassets in Resources */,
+				DCBBA59D2AEDD827004A6110 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCBBA5A32AEDD827004A6110 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCBBA5AD2AEDD827004A6110 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCBBA5912AEDD825004A6110 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCBBA5D22AEDD947004A6110 /* MakeFlashcardsView.swift in Sources */,
+				DCBBA5C62AEDD899004A6110 /* FlashcardContentView.swift in Sources */,
+				DCBBA5D02AEDD927004A6110 /* FlashcardView.swift in Sources */,
+				DCBBA5DA2AEDDA3A004A6110 /* ScannerContentView.swift in Sources */,
+				DCBBA5CC2AEDD8ED004A6110 /* FlashcardStack.swift in Sources */,
+				DCBBA5DC2AEDDA4D004A6110 /* ScannerView.swift in Sources */,
+				DCBBA5D62AEDD98E004A6110 /* gpt_3.5.swift in Sources */,
+				DCBBA5DE2AEDDA6B004A6110 /* TextRecognizer.swift in Sources */,
+				DCBBA5CA2AEDD8D3004A6110 /* FlashcardData.swift in Sources */,
+				DCBBA5D42AEDD95F004A6110 /* REALContentView.swift in Sources */,
+				DCBBA5D82AEDDA1F004A6110 /* ScanData.swift in Sources */,
+				DCBBA5C82AEDD8B9004A6110 /* Flashcard.swift in Sources */,
+				DCBBA5992AEDD825004A6110 /* Scan_FlashLambdaApp.swift in Sources */,
+				DCBBA5CE2AEDD90B004A6110 /* FlashcardViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCBBA5A12AEDD827004A6110 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCBBA5AA2AEDD827004A6110 /* Scan_FlashLambdaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCBBA5AB2AEDD827004A6110 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCBBA5B42AEDD827004A6110 /* Scan_FlashLambdaUITests.swift in Sources */,
+				DCBBA5B62AEDD827004A6110 /* Scan_FlashLambdaUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DCBBA5A72AEDD827004A6110 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCBBA5942AEDD825004A6110 /* Scan-FlashLambda */;
+			targetProxy = DCBBA5A62AEDD827004A6110 /* PBXContainerItemProxy */;
+		};
+		DCBBA5B12AEDD827004A6110 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCBBA5942AEDD825004A6110 /* Scan-FlashLambda */;
+			targetProxy = DCBBA5B02AEDD827004A6110 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DCBBA5B72AEDD827004A6110 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DCBBA5B82AEDD827004A6110 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCBBA5BA2AEDD827004A6110 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Scan-FlashLambda/Preview Content\"";
+				DEVELOPMENT_TEAM = 6Z3S2UQUNN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Jesse-Luke.Scan-FlashLambda";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DCBBA5BB2AEDD827004A6110 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Scan-FlashLambda/Preview Content\"";
+				DEVELOPMENT_TEAM = 6Z3S2UQUNN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Jesse-Luke.Scan-FlashLambda";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DCBBA5BD2AEDD827004A6110 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6Z3S2UQUNN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Jesse-Luke.Scan-FlashLambdaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Scan-FlashLambda.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Scan-FlashLambda";
+			};
+			name = Debug;
+		};
+		DCBBA5BE2AEDD827004A6110 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6Z3S2UQUNN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Jesse-Luke.Scan-FlashLambdaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Scan-FlashLambda.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Scan-FlashLambda";
+			};
+			name = Release;
+		};
+		DCBBA5C02AEDD827004A6110 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6Z3S2UQUNN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Jesse-Luke.Scan-FlashLambdaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Scan-FlashLambda";
+			};
+			name = Debug;
+		};
+		DCBBA5C12AEDD827004A6110 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6Z3S2UQUNN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Jesse-Luke.Scan-FlashLambdaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Scan-FlashLambda";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCBBA5902AEDD825004A6110 /* Build configuration list for PBXProject "Scan-FlashLambda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCBBA5B72AEDD827004A6110 /* Debug */,
+				DCBBA5B82AEDD827004A6110 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCBBA5B92AEDD827004A6110 /* Build configuration list for PBXNativeTarget "Scan-FlashLambda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCBBA5BA2AEDD827004A6110 /* Debug */,
+				DCBBA5BB2AEDD827004A6110 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCBBA5BC2AEDD827004A6110 /* Build configuration list for PBXNativeTarget "Scan-FlashLambdaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCBBA5BD2AEDD827004A6110 /* Debug */,
+				DCBBA5BE2AEDD827004A6110 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCBBA5BF2AEDD827004A6110 /* Build configuration list for PBXNativeTarget "Scan-FlashLambdaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCBBA5C02AEDD827004A6110 /* Debug */,
+				DCBBA5C12AEDD827004A6110 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DCBBA5C22AEDD865004A6110 /* XCRemoteSwiftPackageReference "OpenAI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MacPaw/OpenAI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DCBBA5C32AEDD865004A6110 /* OpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DCBBA5C22AEDD865004A6110 /* XCRemoteSwiftPackageReference "OpenAI" */;
+			productName = OpenAI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = DCBBA58D2AEDD825004A6110 /* Project object */;
+}
