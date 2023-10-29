@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		72F699B12AEDF0D40068572D /* AssignMateFLASHCARD_OCRApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F699B02AEDF0D40068572D /* AssignMateFLASHCARD_OCRApp.swift */; };
+		72F699B52AEDF0EA0068572D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72F699B42AEDF0EA0068572D /* Assets.xcassets */; };
+		72F699B82AEDF0EA0068572D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72F699B72AEDF0EA0068572D /* Preview Assets.xcassets */; };
+		72F699C22AEDF0EA0068572D /* AssignMateFLASHCARD_OCRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F699C12AEDF0EA0068572D /* AssignMateFLASHCARD_OCRTests.swift */; };
+		72F699CC2AEDF0EA0068572D /* AssignMateFLASHCARD_OCRUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F699CB2AEDF0EA0068572D /* AssignMateFLASHCARD_OCRUITests.swift */; };
+		72F699CE2AEDF0EA0068572D /* AssignMateFLASHCARD_OCRUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F699CD2AEDF0EA0068572D /* AssignMateFLASHCARD_OCRUITestsLaunchTests.swift */; };
+		72F699DB2AEDF1C10068572D /* FlashCardContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F699DA2AEDF1C10068572D /* FlashCardContentView.swift */; };
+		72F699DD2AEDF1FB0068572D /* FlashcardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F699DC2AEDF1FB0068572D /* FlashcardData.swift */; };
+		72F699DF2AEDF2150068572D /* FlashcardStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F699DE2AEDF2150068572D /* FlashcardStack.swift */; };
+		72F699E12AEDF2350068572D /* FlashcardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F699E02AEDF2350068572D /* FlashcardView.swift */; };
+		72F699E32AEDF2570068572D /* FlashcardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F699E22AEDF2570068572D /* FlashcardViewModel.swift */; };
+		72F699E52AEDF2770068572D /* MakeFlashcardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F699E42AEDF2770068572D /* MakeFlashcardsView.swift */; };
+		72F699E72AEDF2960068572D /* REALContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F699E62AEDF2960068572D /* REALContentView.swift */; };
+		72F699E92AEDF2AF0068572D /* ScanData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F699E82AEDF2AF0068572D /* ScanData.swift */; };
+		72F699EB2AEDF2D00068572D /* ScannerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F699EA2AEDF2D00068572D /* ScannerContentView.swift */; };
+		72F699ED2AEDF2F50068572D /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F699EC2AEDF2F50068572D /* ScannerView.swift */; };
+		72F699EF2AEDF3110068572D /* TextRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F699EE2AEDF3110068572D /* TextRecognizer.swift */; };
+		72F699F12AEDF33D0068572D /* gpt_3.5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F699F02AEDF33D0068572D /* gpt_3.5.swift */; };
+		72F699F32AEDF3FB0068572D /* Flashcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F699F22AEDF3FB0068572D /* Flashcard.swift */; };
+		72F699F52AEDFB860068572D /* SaveFlashcardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F699F42AEDFB860068572D /* SaveFlashcardsView.swift */; };
+		72F699F72AEDFF340068572D /* FlashcardSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F699F62AEDFF340068572D /* FlashcardSet.swift */; };
+		72F699F92AEDFFFB0068572D /* FlashcardStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F699F82AEDFFFB0068572D /* FlashcardStore.swift */; };
+		72F699FB2AEE003A0068572D /* FlashcardSetDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F699FA2AEE003A0068572D /* FlashcardSetDetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		72F699BE2AEDF0EA0068572D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72F699A52AEDF0D40068572D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72F699AC2AEDF0D40068572D;
+			remoteInfo = "AssignMateFLASHCARD+OCR";
+		};
+		72F699C82AEDF0EA0068572D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72F699A52AEDF0D40068572D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72F699AC2AEDF0D40068572D;
+			remoteInfo = "AssignMateFLASHCARD+OCR";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		72F699AD2AEDF0D40068572D /* AssignMateFLASHCARD+OCR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AssignMateFLASHCARD+OCR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		72F699B02AEDF0D40068572D /* AssignMateFLASHCARD_OCRApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignMateFLASHCARD_OCRApp.swift; sourceTree = "<group>"; };
+		72F699B42AEDF0EA0068572D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		72F699B72AEDF0EA0068572D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		72F699BD2AEDF0EA0068572D /* AssignMateFLASHCARD+OCRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AssignMateFLASHCARD+OCRTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		72F699C12AEDF0EA0068572D /* AssignMateFLASHCARD_OCRTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignMateFLASHCARD_OCRTests.swift; sourceTree = "<group>"; };
+		72F699C72AEDF0EA0068572D /* AssignMateFLASHCARD+OCRUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AssignMateFLASHCARD+OCRUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		72F699CB2AEDF0EA0068572D /* AssignMateFLASHCARD_OCRUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignMateFLASHCARD_OCRUITests.swift; sourceTree = "<group>"; };
+		72F699CD2AEDF0EA0068572D /* AssignMateFLASHCARD_OCRUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignMateFLASHCARD_OCRUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		72F699DA2AEDF1C10068572D /* FlashCardContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardContentView.swift; sourceTree = "<group>"; };
+		72F699DC2AEDF1FB0068572D /* FlashcardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardData.swift; sourceTree = "<group>"; };
+		72F699DE2AEDF2150068572D /* FlashcardStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardStack.swift; sourceTree = "<group>"; };
+		72F699E02AEDF2350068572D /* FlashcardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardView.swift; sourceTree = "<group>"; };
+		72F699E22AEDF2570068572D /* FlashcardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardViewModel.swift; sourceTree = "<group>"; };
+		72F699E42AEDF2770068572D /* MakeFlashcardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeFlashcardsView.swift; sourceTree = "<group>"; };
+		72F699E62AEDF2960068572D /* REALContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REALContentView.swift; sourceTree = "<group>"; };
+		72F699E82AEDF2AF0068572D /* ScanData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanData.swift; sourceTree = "<group>"; };
+		72F699EA2AEDF2D00068572D /* ScannerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerContentView.swift; sourceTree = "<group>"; };
+		72F699EC2AEDF2F50068572D /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		72F699EE2AEDF3110068572D /* TextRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRecognizer.swift; sourceTree = "<group>"; };
+		72F699F02AEDF33D0068572D /* gpt_3.5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gpt_3.5.swift; sourceTree = "<group>"; };
+		72F699F22AEDF3FB0068572D /* Flashcard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flashcard.swift; sourceTree = "<group>"; };
+		72F699F42AEDFB860068572D /* SaveFlashcardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveFlashcardsView.swift; sourceTree = "<group>"; };
+		72F699F62AEDFF340068572D /* FlashcardSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardSet.swift; sourceTree = "<group>"; };
+		72F699F82AEDFFFB0068572D /* FlashcardStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardStore.swift; sourceTree = "<group>"; };
+		72F699FA2AEE003A0068572D /* FlashcardSetDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardSetDetailView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		72F699AA2AEDF0D40068572D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72F699BA2AEDF0EA0068572D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72F699C42AEDF0EA0068572D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		72F699A42AEDF0D40068572D = {
+			isa = PBXGroup;
+			children = (
+				72F699AF2AEDF0D40068572D /* AssignMateFLASHCARD+OCR */,
+				72F699C02AEDF0EA0068572D /* AssignMateFLASHCARD+OCRTests */,
+				72F699CA2AEDF0EA0068572D /* AssignMateFLASHCARD+OCRUITests */,
+				72F699AE2AEDF0D40068572D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		72F699AE2AEDF0D40068572D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				72F699AD2AEDF0D40068572D /* AssignMateFLASHCARD+OCR.app */,
+				72F699BD2AEDF0EA0068572D /* AssignMateFLASHCARD+OCRTests.xctest */,
+				72F699C72AEDF0EA0068572D /* AssignMateFLASHCARD+OCRUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		72F699AF2AEDF0D40068572D /* AssignMateFLASHCARD+OCR */ = {
+			isa = PBXGroup;
+			children = (
+				72F699B02AEDF0D40068572D /* AssignMateFLASHCARD_OCRApp.swift */,
+				72F699EA2AEDF2D00068572D /* ScannerContentView.swift */,
+				72F699EC2AEDF2F50068572D /* ScannerView.swift */,
+				72F699EE2AEDF3110068572D /* TextRecognizer.swift */,
+				72F699F02AEDF33D0068572D /* gpt_3.5.swift */,
+				72F699DA2AEDF1C10068572D /* FlashCardContentView.swift */,
+				72F699DC2AEDF1FB0068572D /* FlashcardData.swift */,
+				72F699F62AEDFF340068572D /* FlashcardSet.swift */,
+				72F699F82AEDFFFB0068572D /* FlashcardStore.swift */,
+				72F699DE2AEDF2150068572D /* FlashcardStack.swift */,
+				72F699E02AEDF2350068572D /* FlashcardView.swift */,
+				72F699F22AEDF3FB0068572D /* Flashcard.swift */,
+				72F699E22AEDF2570068572D /* FlashcardViewModel.swift */,
+				72F699E42AEDF2770068572D /* MakeFlashcardsView.swift */,
+				72F699E62AEDF2960068572D /* REALContentView.swift */,
+				72F699F42AEDFB860068572D /* SaveFlashcardsView.swift */,
+				72F699FA2AEE003A0068572D /* FlashcardSetDetailView.swift */,
+				72F699E82AEDF2AF0068572D /* ScanData.swift */,
+				72F699B42AEDF0EA0068572D /* Assets.xcassets */,
+				72F699B62AEDF0EA0068572D /* Preview Content */,
+			);
+			path = "AssignMateFLASHCARD+OCR";
+			sourceTree = "<group>";
+		};
+		72F699B62AEDF0EA0068572D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				72F699B72AEDF0EA0068572D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		72F699C02AEDF0EA0068572D /* AssignMateFLASHCARD+OCRTests */ = {
+			isa = PBXGroup;
+			children = (
+				72F699C12AEDF0EA0068572D /* AssignMateFLASHCARD_OCRTests.swift */,
+			);
+			path = "AssignMateFLASHCARD+OCRTests";
+			sourceTree = "<group>";
+		};
+		72F699CA2AEDF0EA0068572D /* AssignMateFLASHCARD+OCRUITests */ = {
+			isa = PBXGroup;
+			children = (
+				72F699CB2AEDF0EA0068572D /* AssignMateFLASHCARD_OCRUITests.swift */,
+				72F699CD2AEDF0EA0068572D /* AssignMateFLASHCARD_OCRUITestsLaunchTests.swift */,
+			);
+			path = "AssignMateFLASHCARD+OCRUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		72F699AC2AEDF0D40068572D /* AssignMateFLASHCARD+OCR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72F699D12AEDF0EA0068572D /* Build configuration list for PBXNativeTarget "AssignMateFLASHCARD+OCR" */;
+			buildPhases = (
+				72F699A92AEDF0D40068572D /* Sources */,
+				72F699AA2AEDF0D40068572D /* Frameworks */,
+				72F699AB2AEDF0D40068572D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AssignMateFLASHCARD+OCR";
+			productName = "AssignMateFLASHCARD+OCR";
+			productReference = 72F699AD2AEDF0D40068572D /* AssignMateFLASHCARD+OCR.app */;
+			productType = "com.apple.product-type.application";
+		};
+		72F699BC2AEDF0EA0068572D /* AssignMateFLASHCARD+OCRTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72F699D42AEDF0EA0068572D /* Build configuration list for PBXNativeTarget "AssignMateFLASHCARD+OCRTests" */;
+			buildPhases = (
+				72F699B92AEDF0EA0068572D /* Sources */,
+				72F699BA2AEDF0EA0068572D /* Frameworks */,
+				72F699BB2AEDF0EA0068572D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				72F699BF2AEDF0EA0068572D /* PBXTargetDependency */,
+			);
+			name = "AssignMateFLASHCARD+OCRTests";
+			productName = "AssignMateFLASHCARD+OCRTests";
+			productReference = 72F699BD2AEDF0EA0068572D /* AssignMateFLASHCARD+OCRTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		72F699C62AEDF0EA0068572D /* AssignMateFLASHCARD+OCRUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72F699D72AEDF0EA0068572D /* Build configuration list for PBXNativeTarget "AssignMateFLASHCARD+OCRUITests" */;
+			buildPhases = (
+				72F699C32AEDF0EA0068572D /* Sources */,
+				72F699C42AEDF0EA0068572D /* Frameworks */,
+				72F699C52AEDF0EA0068572D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				72F699C92AEDF0EA0068572D /* PBXTargetDependency */,
+			);
+			name = "AssignMateFLASHCARD+OCRUITests";
+			productName = "AssignMateFLASHCARD+OCRUITests";
+			productReference = 72F699C72AEDF0EA0068572D /* AssignMateFLASHCARD+OCRUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		72F699A52AEDF0D40068572D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					72F699AC2AEDF0D40068572D = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					72F699BC2AEDF0EA0068572D = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 72F699AC2AEDF0D40068572D;
+					};
+					72F699C62AEDF0EA0068572D = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 72F699AC2AEDF0D40068572D;
+					};
+				};
+			};
+			buildConfigurationList = 72F699A82AEDF0D40068572D /* Build configuration list for PBXProject "AssignMateFLASHCARD+OCR" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 72F699A42AEDF0D40068572D;
+			productRefGroup = 72F699AE2AEDF0D40068572D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				72F699AC2AEDF0D40068572D /* AssignMateFLASHCARD+OCR */,
+				72F699BC2AEDF0EA0068572D /* AssignMateFLASHCARD+OCRTests */,
+				72F699C62AEDF0EA0068572D /* AssignMateFLASHCARD+OCRUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		72F699AB2AEDF0D40068572D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72F699B82AEDF0EA0068572D /* Preview Assets.xcassets in Resources */,
+				72F699B52AEDF0EA0068572D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72F699BB2AEDF0EA0068572D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72F699C52AEDF0EA0068572D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		72F699A92AEDF0D40068572D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72F699DD2AEDF1FB0068572D /* FlashcardData.swift in Sources */,
+				72F699F72AEDFF340068572D /* FlashcardSet.swift in Sources */,
+				72F699F52AEDFB860068572D /* SaveFlashcardsView.swift in Sources */,
+				72F699F92AEDFFFB0068572D /* FlashcardStore.swift in Sources */,
+				72F699F12AEDF33D0068572D /* gpt_3.5.swift in Sources */,
+				72F699E12AEDF2350068572D /* FlashcardView.swift in Sources */,
+				72F699E72AEDF2960068572D /* REALContentView.swift in Sources */,
+				72F699DF2AEDF2150068572D /* FlashcardStack.swift in Sources */,
+				72F699EF2AEDF3110068572D /* TextRecognizer.swift in Sources */,
+				72F699FB2AEE003A0068572D /* FlashcardSetDetailView.swift in Sources */,
+				72F699F32AEDF3FB0068572D /* Flashcard.swift in Sources */,
+				72F699E52AEDF2770068572D /* MakeFlashcardsView.swift in Sources */,
+				72F699E32AEDF2570068572D /* FlashcardViewModel.swift in Sources */,
+				72F699B12AEDF0D40068572D /* AssignMateFLASHCARD_OCRApp.swift in Sources */,
+				72F699EB2AEDF2D00068572D /* ScannerContentView.swift in Sources */,
+				72F699DB2AEDF1C10068572D /* FlashCardContentView.swift in Sources */,
+				72F699ED2AEDF2F50068572D /* ScannerView.swift in Sources */,
+				72F699E92AEDF2AF0068572D /* ScanData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72F699B92AEDF0EA0068572D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72F699C22AEDF0EA0068572D /* AssignMateFLASHCARD_OCRTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72F699C32AEDF0EA0068572D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72F699CE2AEDF0EA0068572D /* AssignMateFLASHCARD_OCRUITestsLaunchTests.swift in Sources */,
+				72F699CC2AEDF0EA0068572D /* AssignMateFLASHCARD_OCRUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		72F699BF2AEDF0EA0068572D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72F699AC2AEDF0D40068572D /* AssignMateFLASHCARD+OCR */;
+			targetProxy = 72F699BE2AEDF0EA0068572D /* PBXContainerItemProxy */;
+		};
+		72F699C92AEDF0EA0068572D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72F699AC2AEDF0D40068572D /* AssignMateFLASHCARD+OCR */;
+			targetProxy = 72F699C82AEDF0EA0068572D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		72F699CF2AEDF0EA0068572D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		72F699D02AEDF0EA0068572D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		72F699D22AEDF0EA0068572D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AssignMateFLASHCARD+OCR/Preview Content\"";
+				DEVELOPMENT_TEAM = G35H72FWR9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Congressional-App-Challenge.AssignMateFLASHCARD-OCR";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		72F699D32AEDF0EA0068572D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AssignMateFLASHCARD+OCR/Preview Content\"";
+				DEVELOPMENT_TEAM = G35H72FWR9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Congressional-App-Challenge.AssignMateFLASHCARD-OCR";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		72F699D52AEDF0EA0068572D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G35H72FWR9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Congressional-App-Challenge.AssignMateFLASHCARD-OCRTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AssignMateFLASHCARD+OCR.app/AssignMateFLASHCARD+OCR";
+			};
+			name = Debug;
+		};
+		72F699D62AEDF0EA0068572D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G35H72FWR9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Congressional-App-Challenge.AssignMateFLASHCARD-OCRTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AssignMateFLASHCARD+OCR.app/AssignMateFLASHCARD+OCR";
+			};
+			name = Release;
+		};
+		72F699D82AEDF0EA0068572D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G35H72FWR9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Congressional-App-Challenge.AssignMateFLASHCARD-OCRUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "AssignMateFLASHCARD+OCR";
+			};
+			name = Debug;
+		};
+		72F699D92AEDF0EA0068572D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G35H72FWR9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Congressional-App-Challenge.AssignMateFLASHCARD-OCRUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "AssignMateFLASHCARD+OCR";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		72F699A82AEDF0D40068572D /* Build configuration list for PBXProject "AssignMateFLASHCARD+OCR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72F699CF2AEDF0EA0068572D /* Debug */,
+				72F699D02AEDF0EA0068572D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72F699D12AEDF0EA0068572D /* Build configuration list for PBXNativeTarget "AssignMateFLASHCARD+OCR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72F699D22AEDF0EA0068572D /* Debug */,
+				72F699D32AEDF0EA0068572D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72F699D42AEDF0EA0068572D /* Build configuration list for PBXNativeTarget "AssignMateFLASHCARD+OCRTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72F699D52AEDF0EA0068572D /* Debug */,
+				72F699D62AEDF0EA0068572D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72F699D72AEDF0EA0068572D /* Build configuration list for PBXNativeTarget "AssignMateFLASHCARD+OCRUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72F699D82AEDF0EA0068572D /* Debug */,
+				72F699D92AEDF0EA0068572D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 72F699A52AEDF0D40068572D /* Project object */;
+}
