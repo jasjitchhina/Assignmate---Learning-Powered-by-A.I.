@@ -1,6 +1,7 @@
 import SwiftUI
 import AVFoundation
 
+// A view for displaying individual assignment items
 struct AssignmentItemView: View {
     @StateObject var viewModel = AssignmentItemViewViewModel()
     @State private var isDeleted = false
@@ -91,6 +92,7 @@ struct AssignmentItemView: View {
         }
     }
 
+    // Function to play a sound effect when the button is tapped
     func playSound() {
         guard let url = Bundle.main.url(forResource: "popSound", withExtension: "mp3") else { return }
         do {
