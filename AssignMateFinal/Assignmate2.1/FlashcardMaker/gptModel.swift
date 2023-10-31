@@ -1,8 +1,6 @@
-//
 //  gpt_3.5.swift
-//  AssignMateFLASHCARD+OCR
 //
-//  Created by Peter Borozan on 10/28/23.
+//  Created by Jasjit Chhina & Luke Borozan on 10/28/23.
 //
 
 import Foundation
@@ -35,7 +33,6 @@ struct CompletionsResult: Codable {
     let created: Int
     let model: String
     let choices: [Choice]
-    // ... (include other fields here as necessary)
 }
 // The OpenAI class that handles the interaction with the API.
 
@@ -80,4 +77,3 @@ class OpenAI {
         return result
     }
 }
-// Main execution starts here.
