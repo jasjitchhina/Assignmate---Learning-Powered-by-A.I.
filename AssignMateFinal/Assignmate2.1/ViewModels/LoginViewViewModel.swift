@@ -1,9 +1,3 @@
-//
-//  LoginViewViewModel.swift
-//  AssignMate
-//
-//  Created by Jesse Chhina on 10/13/23.
-//
 
 import FirebaseAuth
 import Foundation
