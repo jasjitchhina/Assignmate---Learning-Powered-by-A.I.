@@ -1,38 +1,36 @@
-//
-//  Assignmate2_1UITests.swift
-//  Assignmate2.1UITests
-//
-//  Created by Jesse Chhina on 10/16/23.
-//
-
 import XCTest
 
+// Define the main UI test class that inherits from XCTestCase
 final class Assignmate2_1UITests: XCTestCase {
 
+    // This method is called before each test method, used for setup
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        // Put setup code here if needed
 
-        // In UI tests it is usually best to stop immediately when a failure occurs.
-        continueAfterFailure = false
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+        // In UI tests, it's important to set up the initial state required for your tests before they run.
+        // For example, you can configure the app's launch behavior.
     }
 
+    // This method is called after each test method, used for cleanup
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        // Put teardown/cleanup code here if needed
     }
 
+    // Example of a UI test case
     func testExample() throws {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
 
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        // Use XCTAssert and related functions to verify your UI tests produce the correct results.
+        // You can interact with the app's user interface and make assertions about its behavior.
+        // For example, you can check if certain elements are present, interact with buttons, and validate UI components.
     }
 
+    // Example of a performance UI test case
     func testLaunchPerformance() throws {
+        // This measures how long it takes to launch your application.
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
-            // This measures how long it takes to launch your application.
             measure(metrics: [XCTApplicationLaunchMetric()]) {
                 XCUIApplication().launch()
             }
