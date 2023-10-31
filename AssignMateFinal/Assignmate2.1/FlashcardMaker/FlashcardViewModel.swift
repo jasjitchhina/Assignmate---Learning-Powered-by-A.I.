@@ -46,7 +46,7 @@ class FlashcardViewModel: ObservableObject {
         }
     }
 
-    private let openAI = OpenAI(apiToken: "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")
+    private let openAI = OpenAI(apiToken: "insert secret key")
 
     // Load flashcards from OpenAI based on the input text.
     func loadFlashcards() async {
