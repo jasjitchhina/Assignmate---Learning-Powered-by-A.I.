@@ -1,13 +1,7 @@
-//
-//  AssignmentItemView.swift
-//  AssignMate
-//
-//  Created by Jesse Chhina on 10/13/23.
-//
-
 import FirebaseFirestoreSwift
 import SwiftUI
 
+// A view for displaying a list of assignments
 struct AssignmentsView: View {
     @StateObject var viewModel : AssignmentsViewViewModel
     @FirestoreQuery var items: [AssignmentItem]
@@ -24,6 +18,7 @@ struct AssignmentsView: View {
         })
     }
 
+    // Initialize the view with a user's ID
     init(userId: String){
         self._items = FirestoreQuery(
             collectionPath: "users/\(userId)/assignments")
@@ -58,4 +53,3 @@ struct AssignmentsView: View {
         }
     }
 }
-
