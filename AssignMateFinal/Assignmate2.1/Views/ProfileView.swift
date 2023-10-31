@@ -4,7 +4,7 @@ struct ProfileView: View {
     @StateObject var viewModel = ProfileViewViewModel()
     
     var body: some View {
-        NavigationView {  // Use NavigationView directly for a better navbar appearance
+        NavigationView {
             Group {
                 if let user = viewModel.user {
                     profile(user: user)
@@ -15,11 +15,11 @@ struct ProfileView: View {
                         .padding()
                 }
             }
-            .navigationTitle("Profile")
-            .background(Color(.systemGroupedBackground))
+            .navigationTitle("Profile") // Set the navigation title
+            .background(Color(.systemGroupedBackground)) // Set the background color
         }
         .onAppear {
-            viewModel.fetchUser()
+            viewModel.fetchUser() // Fetch the user data when the view appears
         }
     }
     
@@ -31,7 +31,7 @@ struct ProfileView: View {
                 .aspectRatio(contentMode: .fit)
                 .foregroundColor(Color.purple)
                 .frame(width: 125, height: 125)
-                .clipShape(Circle())   // Make the profile picture circular
+                .clipShape(Circle()) // Make the profile picture circular
                 .padding()
             
             VStack(alignment: .leading, spacing: 16) {
@@ -45,7 +45,7 @@ struct ProfileView: View {
             Spacer()
             
             Button("Log Out") {
-                viewModel.logOut()
+                viewModel.logOut() // Log out when the button is tapped
             }
             .foregroundColor(.white)
             .padding(.vertical, 12)
