@@ -1,10 +1,12 @@
 import SwiftUI
 
+// View for creating a new assignment item
 struct NewItemView: View {
+    // View model to handle new assignment creation
     @StateObject var viewModel = NewItemViewViewModel()
     @Binding var newItemPresented: Bool
 
-    // The Custom Picker Display View
+    // Custom Picker Display View for urgency
     struct UrgencyView: View {
         var urgency: String
 
@@ -17,6 +19,7 @@ struct NewItemView: View {
             }
         }
 
+        // Determine the color based on urgency level
         var urgencyColor: Color {
             switch urgency {
                 case "Low":
@@ -33,16 +36,17 @@ struct NewItemView: View {
     
     var body: some View {
         VStack {
+            // Title for the new assignment view
             Text("New Assignment")
                 .font(.system(size: 32))
                 .bold()
                 .padding()
             
             Form {
-                //course
+                // Course input field
                 TextField("Course Name", text: $viewModel.course)
                 
-                //title
+                // Assignment title input field
                 TextField("Assignment Name", text: $viewModel.title)
                 
                 // Urgency Picker
@@ -60,12 +64,13 @@ struct NewItemView: View {
                     }
                 }
 
-                //due date
+                // Due date selection
                 DatePicker("Due Date", selection: $viewModel.dueDate)
                     .datePickerStyle(GraphicalDatePickerStyle())
                 
-                //button
+                // Save button
                 AMButton(title: "Save", background: .purple) {
+                    // Check if the assignment can be saved
                     if viewModel.canSave {
                         viewModel.save()
                         newItemPresented = false
