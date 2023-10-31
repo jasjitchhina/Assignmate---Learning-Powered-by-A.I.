@@ -1,4 +1,4 @@
-# assignmate2.0
+Assignmate--Learnig Powered by A.I.
 Source Code for basicframework of AssignMate2.0- Created by Jasjit Chhina and Luke Borozan
 
 This app was created as a part of the Congressional App Challenge. 
