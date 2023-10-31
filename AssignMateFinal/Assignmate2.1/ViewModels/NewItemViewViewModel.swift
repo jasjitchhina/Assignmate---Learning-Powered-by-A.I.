@@ -1,35 +1,34 @@
-//
-//  NewItemViewViewModel.swift
-//  AssignMate
-//
-//  Created by Jesse Chhina on 10/13/23.
-//
 
 import FirebaseAuth
 import FirebaseFirestore
 import Foundation
 
-class NewItemViewViewModel: ObservableObject{
+// A view model class for managing the new item view
+class NewItemViewViewModel: ObservableObject {
     @Published var title = ""
     @Published var dueDate = Date()
     @Published var course = ""
     @Published var showAlert = false
-    @Published var urgency = "Normal" // or whatever default value you want
+    @Published var urgency = "Normal" // Default urgency value
     @Published var points: Int = 0
     
-    init(){}
+    init() {}
     
-    func save(){
+    // Function to save a new assignment item
+    func save() {
         guard canSave else {
             return
         }
-        //Get current user id
-        guard let uId = Auth.auth().currentUser?.uid else{
+        
+        // Get the current user's UID
+        guard let uId = Auth.auth().currentUser?.uid else {
             return
         }
         
-        //create model
+        // Create a new unique ID for the assignment item
         let newId = UUID().uuidString
+        
+        // Create a new assignment item model
         let newItem = AssignmentItem(
             id: newId,
             course: course,
@@ -37,11 +36,11 @@ class NewItemViewViewModel: ObservableObject{
             dueDate: dueDate.timeIntervalSince1970,
             createdDate: Date().timeIntervalSince1970,
             isDone: false,
-            urgency: urgency, // new
-            points: points // new
+            urgency: urgency, // Set urgency
+            points: points   // Set points
         )
         
-        //save model
+        // Save the new assignment item in Firestore
         let db = Firestore.firestore()
         
         db.collection("users")
@@ -51,6 +50,7 @@ class NewItemViewViewModel: ObservableObject{
             .setData(newItem.asDictionary())
     }
     
+    // Check if a new assignment item can be saved
     var canSave: Bool {
         guard !title.trimmingCharacters(in: .whitespaces).isEmpty else {
             return false
@@ -58,6 +58,7 @@ class NewItemViewViewModel: ObservableObject{
         guard !course.trimmingCharacters(in: .whitespaces).isEmpty else {
             return false
         }
+        // Check if the due date is at least one day in the future
         guard dueDate >= Date().addingTimeInterval(-86400) else {
             return false
         }
